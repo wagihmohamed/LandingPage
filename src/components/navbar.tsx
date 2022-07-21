@@ -19,7 +19,7 @@ export const NavBar = (): JSX.Element => {
     return (
         <div className='w-full h-[80px] bg-zinc-200 drop-shadow-lg'>
             <div className='w-full h-full flex justify-between items-center px-6'>
-                <h1 className='text-3xl font-bold sm:text-4xl'>BRAND</h1>
+                <h1 className='text-3xl font-bold sm:text-4xl'>CLOUD SYS</h1>
                 <div className='hidden sm:flex items-center min-w-2xl'>
                     {navigation.map((ele) => (
                         <Link className='font-medium cursor-pointer hover:border-b hover:border-gray-500  

@@ -2,10 +2,11 @@ import { ChipIcon, PhoneIcon, SupportIcon } from "@heroicons/react/outline";
 import { SupportCard } from "./sharedComponents/supportCard";
 
 export const Support = (): JSX.Element => {
+    const supportPhotoURL = "https://img.freepik.com/free-photo/confident-call-center-operator-talking-with-client_74855-4059.jpg?size=626&ext=jpg";
     return (
         <div id="support" className="w-full mt-24">
             <div className="w-full h-[700px] bg-gray-900/90 absolute">
-                <img className="object-cover w-full h-full mix-blend-overlay" src="assets/support.jpg" alt="/" />
+                <img className="object-cover w-full h-full mix-blend-overlay" src={supportPhotoURL} alt="/" />
             </div>
 
             <div className="text-white relative">

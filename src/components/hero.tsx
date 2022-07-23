@@ -14,7 +14,7 @@ export const Hero = (): JSX.Element => {
                     <SharedButton path={loginPath} extraCss="md:w-[60%]">Get Started</SharedButton>
                 </div>
                 <div>
-                    <img className="w-full" src="./LandingPage/assets/cyber-bg.png" alt="hero img" />
+                    <img className="w-full" src="assets/cyber-bg.png" alt="hero img" />
                 </div>
                 <div className="sm:absolute flex flex-col py-8 bottom-[5%] border border-slate-300 rounded-xl text-center bg-zinc-200 drop-shadow-lg 
                 mx-1 md:left-1/2 transform md:-translate-x-1/2">

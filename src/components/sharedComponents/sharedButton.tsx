@@ -14,9 +14,9 @@ export const SharedButton: React.FC<SharedButtonProps> = ({ extraCss, path, chil
     return (
         <button
             onClick={(e) => navigation(path!, e)}
-            className={`py-3 px-8 bg-blue-600 rounded-lg w-full font-medium 
+            className={`py-3 px-8 bg-primary rounded-lg w-full font-medium 
                         my-5 transition-all transform hover:scale-105 
-                        hover:bg-blue-500 text-white ${extraCss}`}
+                        hover:bg-primaryhover text-white ${extraCss}`}
         >
             {children}
         </button >

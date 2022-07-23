@@ -5,7 +5,7 @@ export const Support = (): JSX.Element => {
     return (
         <div id="support" className="w-full mt-24">
             <div className="w-full h-[700px] bg-gray-900/90 absolute">
-                <img className="object-cover w-full h-full mix-blend-overlay" src="assets/support.jpg" alt="/" />
+                <img className="object-cover w-full h-full mix-blend-overlay" src="./LandingPage/assets/support.jpg" alt="/" />
             </div>
 
             <div className="text-white relative">

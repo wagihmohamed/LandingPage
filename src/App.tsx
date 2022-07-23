@@ -1,22 +1,21 @@
-import { About } from "./components/about";
-import { AllInOne } from "./components/allInOne";
-import { Footer } from "./components/footer";
-import { Hero } from "./components/hero";
-import { NavBar } from "./components/navbar";
-import { Pricing } from "./components/pricing";
-import { Support } from "./components/support";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/homePage";
+import { Login } from "./pages/loginPage";
+import { RegisterPage } from "./pages/registerPage";
+import { homePath, loginPath, registerPath } from "./utlis/routes";
+
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <Hero />
-      <About />
-      <Support />
-      <AllInOne />
-      <Pricing />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path={homePath} element={<Home />} />
+        <Route path={loginPath} element={<Login />} />
+        <Route path={registerPath} element={<RegisterPage />} />
+      </Routes>
+
+    </BrowserRouter>
+
   );
 }
 

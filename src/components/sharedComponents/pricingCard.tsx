@@ -1,3 +1,4 @@
+import { loginPath } from "../../utlis/routes";
 import { SharedButton } from "./sharedButton";
 interface feature {
     icon: JSX.Element;
@@ -20,7 +21,7 @@ export const PricingCard: React.FC<PricingCardProp> = ({ price, plane, body, fea
                     <p key={idx} className="flex">{ele.icon} {ele.featureTitle} </p>
                 ))}
             </div>
-            <SharedButton extraCss="mt-16">Getting Started</SharedButton>
+            <SharedButton path={loginPath} extraCss="mt-16">Getting Started</SharedButton>
         </div>
     );
 }

@@ -23,12 +23,12 @@ export const Login = (): JSX.Element => {
     })
     return (
         <div className="w-full h-screen bg-gray-100">
-            <div className="w-full max-w-sm mx-auto pt-24">
+            <div className="w-full max-w-sm mx-auto px-4 md:px-0 pt-12 md:pt-24">
                 <div>
                     <div className="flex flex-col items-center">
                         <UserCircleIcon className="w-24 h-24 text-indigo-500" />
                     </div>
-                    <h1 className="font-bold text-4xl pb-4 text-center">Login to your account</h1>
+                    <h1 className="font-bold text-3xl hover:text-2xl pb-4 text-center">Login to your account</h1>
                     <p className="text-center font-medium  pb-6">
                         Doesn't have an account?
                         <a

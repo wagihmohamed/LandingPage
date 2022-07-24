@@ -7,7 +7,7 @@ import { SharedIput } from "../components/sharedComponents/formSharedComponents/
 import { FormButton } from "../components/sharedComponents/formSharedComponents/formSubmitButton";
 
 
-export const RegisterPage = (): JSX.Element => {
+export const Register = (): JSX.Element => {
 
     const formik = useFormik({
         initialValues: {

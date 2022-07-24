@@ -13,7 +13,7 @@ export const SupportCard: React.FC<SupportCardProps> = ({ title, body, icon }) =
                 <p className="text-gray-600 text-xl">{body}</p>
             </div>
             <div >
-                <p className="flex bg-zinc-200 text-indigo-600 font-bold px-8 py-2">Contact Us <ArrowSmRightIcon className="w-6 ml-2" /></p>
+                <p className="flex bg-zinc-200 text-primary font-bold px-8 py-2">Contact Us <ArrowSmRightIcon className="w-6 ml-2" /></p>
             </div>
         </div>
     );

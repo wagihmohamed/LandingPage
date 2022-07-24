@@ -19,17 +19,17 @@ export const Support = (): JSX.Element => {
                 <div className="grid grid-cols-1 md:flex justify-between px-16 relative gap-x-8 gap-y-16 pt-12 sm:pt-20 text-black">
                     <SupportCard
                         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rerum maxime ea sunt magni recusandae aliquid illum itaque et earum!"
-                        icon={<PhoneIcon className="h-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]" />}
+                        icon={<PhoneIcon className="h-16 p-4 bg-primary text-white rounded-lg mt-[-4rem]" />}
                         title="Sales"
                     />
                     <SupportCard
                         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rerum maxime ea sunt magni recusandae aliquid illum itaque et earum!"
-                        icon={<SupportIcon className="h-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]" />}
+                        icon={<SupportIcon className="h-16 p-4 bg-primary text-white rounded-lg mt-[-4rem]" />}
                         title="Technical Support"
                     />
                     <SupportCard
                         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rerum maxime ea sunt magni recusandae aliquid illum itaque et earum!"
-                        icon={<ChipIcon className="h-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]" />}
+                        icon={<ChipIcon className="h-16 p-4 bg-primary text-white rounded-lg mt-[-4rem]" />}
                         title="Media Inquiries"
                     />
                 </div>

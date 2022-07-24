@@ -14,8 +14,8 @@ export const Hero = (): JSX.Element => {
                     <p className="text-2xl">This is your Tech Brand.</p>
                     <SharedButton path={loginPath} extraCss="md:w-[60%]">Get Started</SharedButton>
                 </div>
-                <div className="w-full h-[150px] md:h-full px-4 ">
-                    <img className="w-full h-full object-top object-cover rounded-xl shadow-lg" src={heroPhotoURL} alt="hero img" />
+                <div className="w-full h-[150px] md:h-full">
+                    <img className="w-full h-full  px-4 md:px-0 object-top object-cover rounded-xl shadow-lg" src={heroPhotoURL} alt="hero img" />
                 </div>
                 <div className="sm:absolute flex flex-col py-8 bottom-[5%] mt-3 border border-slate-300 rounded-xl text-center bg-zinc-200 drop-shadow-lg 
                 mx-1 md:left-1/2 transform md:-translate-x-1/2">

@@ -10,7 +10,7 @@ export const Support = (): JSX.Element => {
             </div>
 
             <div className="text-white relative">
-                <div className="px-4 py-12 text-center">
+                <div className="px-2 py-12 text-center">
                     <h2 className="pt-8 text-slate-300 uppercase text-center text-7xl font-bold">Support</h2>
                     <h3 className="text-5xl font-bold py-9 text-center">Finding the right team</h3>
                     <p className="py-6 px-14 text-3xl text-slate-300">You will find the best support with high experience support members 24/7</p>

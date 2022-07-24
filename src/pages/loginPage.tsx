@@ -28,7 +28,7 @@ export const Login = (): JSX.Element => {
                     <div className="flex flex-col items-center">
                         <UserCircleIcon className="w-24 h-24 text-indigo-500" />
                     </div>
-                    <h1 className="font-bold text-3xl hover:text-2xl pb-4 text-center">Login to your account</h1>
+                    <h1 className="font-bold text-3xl md:text-2xl pb-4 text-center">Login to your account</h1>
                     <p className="text-center font-medium  pb-6">
                         Doesn't have an account?
                         <a

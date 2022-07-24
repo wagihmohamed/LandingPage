@@ -53,7 +53,7 @@ export const NavBar = (): JSX.Element => {
                         </Link>
                     </li>
                 ))}
-                <button className='bg-blue-600 text-white  py-3 mb-3 w-full rounded-lg'>Getting Started</button>
+                <SharedButton path={loginPath}>Get Started</SharedButton>
             </ul>}
         </div>
     );

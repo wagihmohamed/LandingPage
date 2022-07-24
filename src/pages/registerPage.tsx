@@ -34,7 +34,7 @@ export const RegisterPage = (): JSX.Element => {
                     <div className="flex flex-col items-center">
                         <UserAddIcon className="w-24 h-24 text-indigo-500" />
                     </div>
-                    <h1 className="font-bold text-3xl hover:text-2xl pb-4 text-center">Create your account</h1>
+                    <h1 className="font-bold text-2xl md:text-3xl pb-4 text-center">Create your account</h1>
                     <p className="text-center font-medium  pb-6">
                         Already have an account?
                         <a

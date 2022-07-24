@@ -1,18 +1,25 @@
-interface AllInOneCardProp {
+interface AllInOneArray {
     title: String;
-    body: string;
     icon: JSX.Element;
+    body: string;
 }
-export const AllInOneCard: React.FC<AllInOneCardProp> = ({ title, body, icon }) => {
+interface AllInOneCardProp {
+    dataArray: AllInOneArray[];
+}
+export const AllInOneCard: React.FC<AllInOneCardProp> = ({ dataArray }) => {
     return (
-        <div className="flex">
-            <div>
-                {icon}
-            </div>
-            <div>
-                <h3 className="font-bold text-lg">{title}</h3>
-                <p className="text-lg pt-2 pb-4">{body}</p>
-            </div>
-        </div>
-    )
+        <>
+            {dataArray.map((element) => (
+                <div className="flex">
+                    <div>
+                        {element.icon}
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-lg">{element.title}</h3>
+                        <p className="text-lg pt-2 pb-4">{element.body}</p>
+                    </div>
+                </div>
+            ))}
+        </>
+    );
 }

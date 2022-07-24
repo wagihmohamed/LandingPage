@@ -22,7 +22,7 @@ export const Pricing = (): JSX.Element => {
         { icon: <XIcon className="w-8 mr-4 text-red-600" />, featureTitle: "Premium Contract" },
     ]
     return (
-        <div id='pricing' className="w-full text-white my-24">
+        <div id='#pricing' className="w-full text-white my-24">
             <div className="w-full h-[800px] bg-slate-900 absolute mix-blend-overlay"></div>
             <div className="max-w-7xl mx-auto py-12">
                 <div className="text-center py-8 mx-auto relative">

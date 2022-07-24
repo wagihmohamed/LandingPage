@@ -6,7 +6,7 @@ import { SharedButton } from "./sharedComponents/sharedButton";
 export const Hero = (): JSX.Element => {
     const heroPhotoURL = 'https://img.freepik.com/free-vector/concept-smart-urban-city-with-server-room-database-icons-data-center-database_39422-628.jpg?w=1380&t=st=1658619741~exp=1658620341~hmac=6a772b3430a310c974ca75a92e89a61ad819536c3e6fb3614a02d42b6fffc67c';
     return (
-        <div id="hero" className="w-full h-screen bg-zinc-200 flex flex-col justify-between">
+        <div id="#hero" className="w-full h-screen bg-zinc-200 flex flex-col justify-between">
             <div className="grid md:grid-cols-2 max-w-[1240px] mx-auto md:mt-32">
                 <div className="flex flex-col justify-center text-center md:items-center w-full px-2 py-6">
                     <p className="text-2xl font-medium">Unique Sequencing & Production</p>

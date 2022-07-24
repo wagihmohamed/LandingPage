@@ -18,7 +18,7 @@ export const NavBar = (): JSX.Element => {
     const handleCloseNav = () => setNav(!nav);
 
     return (
-        <div className='w-full h-[80px] bg-zinc-200 drop-shadow-lg'>
+        <div className='sticky top-0 z-10 w-full h-[80px] bg-zinc-200 drop-shadow-lg'>
             <div className='w-full h-full flex justify-between items-center px-6'>
                 <h1 className='text-3xl font-bold sm:text-4xl'>CLOUD SYS</h1>
                 <div className='hidden sm:flex items-center min-w-2xl'>

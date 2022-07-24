@@ -13,7 +13,7 @@ export const Support = (): JSX.Element => {
                 <div className="px-4 py-12 text-center">
                     <h2 className="pt-8 text-slate-300 uppercase text-center text-7xl font-bold">Support</h2>
                     <h3 className="text-5xl font-bold py-9 text-center">Finding the right team</h3>
-                    <p className="py-6 px-14 text-3xl text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ad tempore repudiandae nam. Praesentium voluptates a ipsum? Accusantium, accusamus totam!</p>
+                    <p className="py-6 px-14 text-3xl text-slate-300">You will find the best support with high experience support members 24/7</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:flex justify-between px-16 relative gap-x-8 gap-y-16 pt-12 sm:pt-20 text-black">

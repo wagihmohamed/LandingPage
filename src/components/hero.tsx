@@ -1,5 +1,5 @@
 import { CloudUploadIcon, DatabaseIcon, ServerIcon, PaperAirplaneIcon } from "@heroicons/react/outline";
-import { loginPath } from "../utlis/routes";
+import { homePath } from "../utlis/routes";
 import { HeroLabel } from "./sharedComponents/heroLabels";
 import { SharedButton } from "./sharedComponents/sharedButton";
 
@@ -12,7 +12,7 @@ export const Hero = (): JSX.Element => {
                     <p className="text-2xl font-medium">Unique Sequencing & Production</p>
                     <h1 className="py-3 text-5xl md:text-7xl font-bold">Cloud Management</h1>
                     <p className="text-2xl">This is your Tech Brand.</p>
-                    <SharedButton path={loginPath} extraCss="md:w-[60%]">Get Started</SharedButton>
+                    <SharedButton path={homePath} extraCss="md:w-[60%]">Go To Home</SharedButton>
                 </div>
                 <div className="w-full h-[150px] md:h-full">
                     <img className="w-full h-full  px-4 md:px-0 object-top object-cover rounded-xl shadow-lg" src={heroPhotoURL} alt="hero img" />

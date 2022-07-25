@@ -1,12 +1,14 @@
 import { UserCircleIcon } from "@heroicons/react/outline";
 import { useFormik } from "formik";
+import { useNavigate } from "react-router-dom";
 import * as yup from 'yup';
 import { FormButton } from "../components/sharedComponents/formSharedComponents/formSubmitButton";
 import { SharedIput } from "../components/sharedComponents/formSharedComponents/sharedInput";
-import { registerPath } from "../utlis/routes";
+import { homePath, registerPath } from "../utlis/routes";
 import { emptyUsername, requiredPassword, shortPassword, shortUsername } from "../utlis/vlaidationMessages";
 
 export const Login = (): JSX.Element => {
+    const navigate = useNavigate();
     const formik = useFormik({
         initialValues: {
             username: "",
@@ -18,6 +20,8 @@ export const Login = (): JSX.Element => {
         }),
         onSubmit: (values, { resetForm }): void => {
             console.log(JSON.stringify(values));
+            navigate(homePath);
+
             resetForm();
         },
     })

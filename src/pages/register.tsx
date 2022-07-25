@@ -1,14 +1,15 @@
 import { UserAddIcon } from "@heroicons/react/outline";
 import { useFormik } from "formik";
-import { loginPath } from "../utlis/routes";
+import { homePath, loginPath } from "../utlis/routes";
 import * as yup from 'yup';
 import { emptyUsername, matchPassword, requiredPassword, shortPassword, shortUsername } from "../utlis/vlaidationMessages";
 import { SharedIput } from "../components/sharedComponents/formSharedComponents/sharedInput";
 import { FormButton } from "../components/sharedComponents/formSharedComponents/formSubmitButton";
+import { useNavigate } from "react-router-dom";
 
 
 export const Register = (): JSX.Element => {
-
+    const navigate = useNavigate();
     const formik = useFormik({
         initialValues: {
             username: "",
@@ -17,6 +18,7 @@ export const Register = (): JSX.Element => {
         },
         onSubmit: (values, { resetForm }): void => {
             console.log(JSON.stringify(values));
+            navigate(homePath);
             resetForm();
         },
         validationSchema: yup.object({

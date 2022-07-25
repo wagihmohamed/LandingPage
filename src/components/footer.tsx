@@ -1,10 +1,4 @@
-import {
-    FaFacebook,
-    FaGithub,
-    FaInstagram,
-    FaTwitter,
-    FaTwitch,
-} from 'react-icons/fa'
+import { SocialIcons } from "./sharedComponents/socialIcons";
 
 export const Footer = (): JSX.Element => {
     return (
@@ -64,13 +58,7 @@ export const Footer = (): JSX.Element => {
             </div>
             <div className="max-w-7xl mx-auto mt-6 flex flex-col md:flex-row items-center justify-between">
                 <p className='py-4'>2022 Workflow, LLC. All rights reserved</p>
-                <div className='flex space-x-6'>
-                    <FaFacebook className='h-20 cursor-pointer' />
-                    <FaInstagram className='h-20 cursor-pointer' />
-                    <FaTwitter className='h-20 cursor-pointer' />
-                    <FaTwitch className='h-20 cursor-pointer' />
-                    <FaGithub className='h-20 cursor-pointer' />
-                </div>
+                <SocialIcons />
             </div>
         </div >
     );

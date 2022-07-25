@@ -8,6 +8,9 @@ module.exports = {
       colors: {
         primary: '#6366f1',
         primaryhover: '#818cf8',
+      },
+      scale: {
+        'sm': '1.02',
       }
     },
   },

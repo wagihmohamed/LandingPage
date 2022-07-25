@@ -1,5 +1,6 @@
 import { AdjustmentsIcon, BellIcon, BookOpenIcon, BriefcaseIcon, PaperAirplaneIcon, PhoneIcon } from "@heroicons/react/outline";
 import { AllInOneCard } from "./sharedComponents/allInOneCard";
+
 interface AllInOneDataTypes {
     title: string;
     body: string;
@@ -7,7 +8,6 @@ interface AllInOneDataTypes {
 
 }
 export const AllInOne = (): JSX.Element => {
-
     const allInOneData: AllInOneDataTypes[] = [
         {
             title: 'Notifications',

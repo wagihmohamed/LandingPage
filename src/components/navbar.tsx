@@ -6,8 +6,6 @@ import { loginPath } from '../utlis/routes';
 import { SharedButton } from './sharedComponents/sharedButton';
 
 export const NavBar = (): JSX.Element => {
-
-
     const [nav, setNav] = useState(false);
     const handleNav = () => setNav(!nav);
     const handleCloseNav = () => setNav(!nav);

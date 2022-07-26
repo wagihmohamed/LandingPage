@@ -16,7 +16,7 @@ export const HomeMiddle = (): JSX.Element => {
         fetchPetsData();
     }, [])
     return (
-        <div className="w-4/6 py-12 ml-[16.666667%] ">
+        <div className="w-5/6 py-12 lg:ml-[16.666667%] mx-auto mt-12">
             <h1 className="text-center text-4xl font-bold text-primary py-6">These Animals Are Waiting For, You Pick One And Come Now.</h1>
             <AnimalView
                 animals={animalApiData} />

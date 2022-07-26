@@ -1,5 +1,4 @@
 import { AnimalCardProps } from "../../../utlis/interfaces";
-
 export const AnimalCard: React.FC<AnimalCardProps> = ({
     age,
     animalImg,

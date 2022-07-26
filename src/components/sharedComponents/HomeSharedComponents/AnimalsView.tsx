@@ -1,13 +1,13 @@
-
 import { AnimalTypes } from "../../../utlis/interfaces";
 import { AnimalCard } from "./AnimalCard";
 
 interface AnimalViewProps {
     animals: AnimalTypes[];
 }
+
 export const AnimalView: React.FC<AnimalViewProps> = ({ animals }) => {
     return (
-        <div className="max-w-5xl grid md:grid-cols-2 gap-8 md:px-8 mt-8 mx-auto ">
+        <div className="max-w-5xl grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mx-auto gap-8  mt-8">
             {/* Animal Card */}
             {animals.map((element) => (
                 <AnimalCard

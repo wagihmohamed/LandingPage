@@ -1,4 +1,4 @@
-// import { animalData } from "../../../utlis/consts";
+
 import { AnimalTypes } from "../../../utlis/interfaces";
 import { AnimalCard } from "./AnimalCard";
 

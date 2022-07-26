@@ -1,10 +1,10 @@
 import { DocumentAddIcon } from "@heroicons/react/outline";
-import { HomeButtonCard } from "./sharedComponents/homeButtonCard";
+import { HomeButtonCard } from "./sharedComponents/HomeSharedComponents/homeButtonCard";
 import { SocialIcons } from "./sharedComponents/socialIcons";
 
 export const HomeRightBar = (): JSX.Element => {
     return (
-        <div className="w-1/6 flex flex-col justify-between h-full bg-gray-100" >
+        <div className="hidden md:flex w-1/6 flex-col justify-between h-full bg-gray-100" >
             <div>
                 <div>
                     <div className="flex flex-row justify-between items-center py-4 px-6">

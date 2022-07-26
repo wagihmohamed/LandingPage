@@ -7,7 +7,7 @@ interface AnimalViewProps {
 }
 export const AnimalView: React.FC<AnimalViewProps> = ({ animals }) => {
     return (
-        <div className="max-w-5xl grid grid-cols-2 gap-8 px-8 mt-8 mx-auto ">
+        <div className="max-w-5xl grid md:grid-cols-2 gap-8 md:px-8 mt-8 mx-auto ">
             {/* Animal Card */}
             {animals.map((element) => (
                 <AnimalCard

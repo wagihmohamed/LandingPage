@@ -1,8 +1,9 @@
 export interface AnimalCardProps {
     name: string;
     animalImg: string;
-    root: string;
     age: number;
+    petType: string;
+    root: string;
 }
 
 export interface AnimalTypes {
@@ -10,6 +11,7 @@ export interface AnimalTypes {
     name: string;
     img: string;
     age: number;
+    petType: string;
     root: string;
 }
 

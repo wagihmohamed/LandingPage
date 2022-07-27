@@ -26,7 +26,7 @@ export const HomeLeftBar = (): JSX.Element => {
                 </div>
                 <SocialIcons />
             </div>
-            <div className="fixed top-0 lg:hidden w-full py-4 drop-shadow-lg bg-gray-100">
+            <div className="fixed z-50 top-0 lg:hidden w-full py-4 drop-shadow-lg bg-gray-100">
                 <div className="flex justify-between px-4">
                     <p className="text-2xl md:text-4xl font-bold ">DOGO</p>
                     <div onClick={() => setNavOpen(!navOpen)}>

@@ -11,6 +11,7 @@ export const AnimalView: React.FC<AnimalViewProps> = ({ animals }) => {
             {/* Animal Card */}
             {animals.map((element) => (
                 <AnimalCard
+                    petType={element.petType}
                     age={element.age}
                     animalImg={element.img}
                     name={element.name}

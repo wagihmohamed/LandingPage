@@ -1,9 +1,5 @@
-import { AnimalTypes } from "../../../utlis/interfaces";
+import { AnimalViewProps } from "../../../utlis/interfaces";
 import { AnimalCard } from "./AnimalCard";
-
-interface AnimalViewProps {
-    animals: AnimalTypes[];
-}
 
 export const AnimalView: React.FC<AnimalViewProps> = ({ animals }) => {
     return (

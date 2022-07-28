@@ -17,8 +17,6 @@ export const AnimalCard: React.FC<AnimalCardProps> = ({
                 <p className="font-semibold text-primary text-2xl">
                     Age:
                     <span className="text-gray-800 pl-4">{age} years old</span>
-
-
                 </p>
                 <p className="font-semibold text-2xl text-primary">
                     Pet Type:
@@ -32,8 +30,8 @@ export const AnimalCard: React.FC<AnimalCardProps> = ({
             </div>
             <div className="grid grid-cols-3 border-t border-gray-300 mt-4 py-1 divide-x-2 divide-gray-300">
                 <button className="p-3 font-medium text-sm hover:bg-gray-200">Adopt Now</button>
-                <button className="p-3 font-medium text-sm hover:bg-gray-200">Adopt Now</button>
-                <button className="p-3 font-medium text-sm hover:bg-gray-200">Adopt Now</button>
+                <button className="p-3 font-medium text-sm hover:bg-gray-200">Pet Info</button>
+                <button className="p-3 font-medium text-sm hover:bg-gray-200">Details</button>
             </div>
         </div >
     );

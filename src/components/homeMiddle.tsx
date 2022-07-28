@@ -16,7 +16,7 @@ export const HomeMiddle = (): JSX.Element => {
         fetchPetsData();
     }, [])
 
-    const PetsFilteredData = () => {
+    const PetsFilteredData = (): AnimalTypes[] => {
         if (searchQuery.length === 0) {
             return animalApiData
         } else {

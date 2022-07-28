@@ -21,3 +21,7 @@ export interface HomeButtonCardProps {
     imgAlt?: string;
     icon?: JSX.Element;
 }
+
+export interface AnimalViewProps {
+    animals: AnimalTypes[];
+}

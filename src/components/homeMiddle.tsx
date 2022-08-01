@@ -31,7 +31,7 @@ export const HomeMiddle = (): JSX.Element => {
     return (
         <div className="w-5/6 py-12 lg:ml-[16.666667%] mx-auto mt-12">
             <h1 className="text-center text-4xl font-bold text-primary py-6 capitalize">these animals Are Waiting For, You Pick One And Come Now.</h1>
-            <div className="relative  mx-auto max-w-xl flex items-center">
+            <div className="relative drop-shadow-md transition-all hover:scale-sm mx-auto max-w-xl flex items-center">
                 <SearchIcon className="absolute right-4 text-primary w-6 h-6" />
                 <input
                     placeholder="Search By Root..."

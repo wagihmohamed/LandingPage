@@ -8,7 +8,7 @@ import {
 
 export const SocialIcons = (): JSX.Element => {
     return (
-        <div className='flex space-x-8 mx-auto'>
+        <div className='flex space-x-8 flex-wrap mx-auto'>
             <FaFacebook className='h-20 cursor-pointer text-primary' />
             <FaInstagram className='h-20 cursor-pointer text-primary' />
             <FaTwitter className='h-20 cursor-pointer text-primary' />

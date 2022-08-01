@@ -10,7 +10,7 @@ export const HomeLeftBar = (): JSX.Element => {
             <div className="w-1/6 hidden lg:flex flex-col justify-between fixed top-0  h-full bg-gray-100" >
                 <div>
                     <div>
-                        <div className="flex flex-row justify-between items-center py-4 px-6">
+                        <div className="flex flex-row flex-wrap justify-between items-center py-4 px-6">
                             <p className="text-2xl md:text-4xl font-bold ">DOGO</p>
                             <img className="hidden md:flex w-16 " src="https://cdn-icons-png.flaticon.com/128/1076/1076928.png" alt="dog img" />
                         </div>

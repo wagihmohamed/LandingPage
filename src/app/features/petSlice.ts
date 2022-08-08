@@ -1,37 +1,56 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import axios, { AxiosResponse } from 'axios';
 import { AnimalTypes } from '../../utlis/interfaces';
 
-const initialState: AnimalTypes[] = [
-  {
-    id: 0,
-    age: 0,
-    img: '',
-    name: '',
-    petType: '',
-    root: '',
-  },
-];
+interface PetState {
+  pets: AnimalTypes[];
+  status: any;
+}
+const initialState: PetState = {
+  pets: [],
+  status: null,
+};
+
+export const getPets = createAsyncThunk('pets/getPets', async () => {
+  return await axios
+    .get<AnimalTypes>(
+      'https://mocki.io/v1/ca4ae639-c97f-48fe-a15c-b06c650e53d6'
+    )
+    .then((res: AxiosResponse) => {
+      return res.data;
+    })
+    .catch((err) => {
+      return err.message;
+    });
+});
 
 export const peteSlice = createSlice({
   name: 'pets',
   initialState,
   reducers: {
-    addPets: (state, action) => {
-      return (state = action.payload);
+    addPets: (state, action: PayloadAction<AnimalTypes[]>) => {
+      state.pets = action.payload;
     },
-    showDogsOnly: (state, action) => {
-      return state.filter(
-        (pet) =>
-          pet.petType.toLocaleLowerCase() === action.payload.toLocaleLowerCase()
+    showOnPetTypeOnly: (state, action) => {
+      state.pets = state.pets.filter(
+        (pet) => pet.petType === action.payload.toLocaleLowerCase()
       );
     },
   },
+  extraReducers: (builder) => {
+    builder.addCase(getPets.pending, (state) => {
+      state.status = 'loading';
+    });
+    builder.addCase(getPets.fulfilled, (state, action) => {
+      state.status = 'success';
+      state.pets = action.payload;
+    });
+    builder.addCase(getPets.rejected, (state) => {
+      state.status = 'failed';
+    });
+  },
 });
 
-export const { addPets, showDogsOnly } = peteSlice.actions;
+export const { addPets, showOnPetTypeOnly } = peteSlice.actions;
 
 export default peteSlice.reducer;
-
-// showDogsOnly: (state) => {
-//   return state.filter((pet) => pet.petType.toLocaleLowerCase() === 'dog');
-// },

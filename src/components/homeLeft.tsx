@@ -1,6 +1,6 @@
-import { DocumentAddIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { useState } from 'react';
-import { showDogsOnly } from '../app/features/petSlice';
+import { showOnPetTypeOnly } from '../app/features/petSlice';
 import { useAppDispatch } from '../app/hooks';
 import { HomeButtonCard } from './sharedComponents/HomeSharedComponents/homeButtonCard';
 import { SocialIcons } from './sharedComponents/socialIcons';
@@ -9,7 +9,7 @@ export const HomeLeftBar = (): JSX.Element => {
   const [navOpen, setNavOpen] = useState(false);
   const dispatch = useAppDispatch();
   const checkClicked = (petShowType: string) => {
-    dispatch(showDogsOnly(petShowType));
+    dispatch(showOnPetTypeOnly(petShowType));
   };
   return (
     <>

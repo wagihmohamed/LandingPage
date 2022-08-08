@@ -10,6 +10,7 @@ export const HomeMiddle = (): JSX.Element => {
   const dispatch = useAppDispatch();
   const checkPets = useAppSelector((state) => state.pet);
   const [searchQuery, setSearchQuery] = useState('');
+
   const fetchPetsData = (): void => {
     axios
       .get<AnimalTypes>(
@@ -17,14 +18,11 @@ export const HomeMiddle = (): JSX.Element => {
       )
       .then((res: AxiosResponse) => {
         dispatch(addPets(res.data));
-        console.log('was rendered');
       });
   };
   useEffect(() => {
     fetchPetsData();
   }, []);
-
-  console.log(checkPets);
 
   const PetsFilteredData = (): AnimalTypes[] => {
     if (searchQuery.length === 0) {

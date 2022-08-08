@@ -1,6 +1,6 @@
 import { DocumentAddIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
 import { useState } from 'react';
-import { displayPetType } from '../app/features/petSlice';
+import { showDogsOnly } from '../app/features/petSlice';
 import { useAppDispatch } from '../app/hooks';
 import { HomeButtonCard } from './sharedComponents/HomeSharedComponents/homeButtonCard';
 import { SocialIcons } from './sharedComponents/socialIcons';
@@ -8,8 +8,8 @@ import { SocialIcons } from './sharedComponents/socialIcons';
 export const HomeLeftBar = (): JSX.Element => {
   const [navOpen, setNavOpen] = useState(false);
   const dispatch = useAppDispatch();
-  const showWithPetType = (showPetType: string) => {
-    dispatch(displayPetType(showPetType));
+  const checkClicked = (petShowType: string) => {
+    dispatch(showDogsOnly(petShowType));
   };
   return (
     <>
@@ -31,20 +31,14 @@ export const HomeLeftBar = (): JSX.Element => {
             <div className="px-1 hidden md:block">
               <div className="mt-6 bg-gray-100 space-y-6 p-4 rounded-md shadow-md">
                 <HomeButtonCard
-                  onClick={() => showWithPetType('dog')}
-                  icon={<DocumentAddIcon className="w-9" />}
-                >
-                  Browse All
-                </HomeButtonCard>
-                <HomeButtonCard
-                  onClick={() => showWithPetType('dog')}
+                  onClick={() => checkClicked('dog')}
                   imgSrc="https://cdn-icons-png.flaticon.com/128/616/616408.png"
                   imgAlt="Dog Icon"
                 >
                   Dogs
                 </HomeButtonCard>
                 <HomeButtonCard
-                  onClick={() => showWithPetType('cat')}
+                  onClick={() => checkClicked('cat')}
                   imgSrc="https://cdn-icons-png.flaticon.com/128/616/616430.png"
                   imgAlt="Cat Icon"
                 >
@@ -71,20 +65,14 @@ export const HomeLeftBar = (): JSX.Element => {
             </p>
             <div className="mt-6 bg-gray-100 space-y-6 p-4 rounded-md shadow-md">
               <HomeButtonCard
-                onClick={() => showWithPetType('dog')}
-                icon={<DocumentAddIcon className="w-9" />}
-              >
-                Browse All
-              </HomeButtonCard>
-              <HomeButtonCard
-                onClick={() => showWithPetType('dog')}
+                onClick={() => checkClicked('dog')}
                 imgSrc="https://cdn-icons-png.flaticon.com/128/616/616408.png"
                 imgAlt="Dog Icon"
               >
                 Dogs
               </HomeButtonCard>
               <HomeButtonCard
-                onClick={() => showWithPetType('cat')}
+                onClick={() => checkClicked('cat')}
                 imgSrc="https://cdn-icons-png.flaticon.com/128/616/616430.png"
                 imgAlt="Cat Icon"
               >

@@ -1,5 +1,4 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
 import { HomeButtonCardProps } from '../../../utlis/interfaces';
 
 export const HomeButtonCard: React.FC<HomeButtonCardProps> = ({
@@ -9,10 +8,9 @@ export const HomeButtonCard: React.FC<HomeButtonCardProps> = ({
   imgSrc,
   imgAlt,
 }) => {
-  const dispatch = useDispatch();
   return (
     <button
-      onClick={() => onClick}
+      onClick={onClick}
       className="flex justify-between font-semibold items-center bg-primary hover:bg-primaryhover text-white w-full px-8 py-3 rounded-lg"
     >
       {children}

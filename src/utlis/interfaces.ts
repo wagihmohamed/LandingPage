@@ -19,7 +19,7 @@ export interface HomeButtonCardProps {
   children: React.ReactNode;
   imgSrc?: string;
   imgAlt?: string;
-  onClick: any;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
   icon?: JSX.Element;
 }
 

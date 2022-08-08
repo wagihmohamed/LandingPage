@@ -19,7 +19,7 @@ export const peteSlice = createSlice({
     addPets: (state, action) => {
       return (state = action.payload);
     },
-    displayPetType: (state, action) => {
+    showDogsOnly: (state, action) => {
       return state.filter(
         (pet) =>
           pet.petType.toLocaleLowerCase() === action.payload.toLocaleLowerCase()
@@ -28,6 +28,10 @@ export const peteSlice = createSlice({
   },
 });
 
-export const { addPets, displayPetType } = peteSlice.actions;
+export const { addPets, showDogsOnly } = peteSlice.actions;
 
 export default peteSlice.reducer;
+
+// showDogsOnly: (state) => {
+//   return state.filter((pet) => pet.petType.toLocaleLowerCase() === 'dog');
+// },

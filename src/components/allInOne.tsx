@@ -1,5 +1,6 @@
 import { AdjustmentsIcon, BellIcon, BookOpenIcon, BriefcaseIcon, PaperAirplaneIcon, PhoneIcon } from "@heroicons/react/outline";
-import { AllInOneCard } from "./sharedComponents/allInOneCard";
+import { AllInOneCard } from "./sharedComponents/AllInOneCard";
+
 
 interface AllInOneDataTypes {
     title: string;

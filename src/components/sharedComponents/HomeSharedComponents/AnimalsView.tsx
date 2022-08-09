@@ -3,7 +3,7 @@ import { AnimalCard } from './AnimalCard';
 
 export const AnimalView: React.FC<AnimalViewProps> = ({ animals }) => {
   return (
-    <div className="max-w-5xl grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mx-auto gap-8  mt-8">
+    <div className="max-w-5xl grid sm:grid-cols-1 md:grid-cols-1 py-12 lg:grid-cols-2 mx-auto gap-8  mt-8">
       {/* Animal Card */}
       {animals?.map((element) => (
         <AnimalCard

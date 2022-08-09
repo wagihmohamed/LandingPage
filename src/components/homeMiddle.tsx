@@ -9,10 +9,11 @@ export const HomeMiddle = (): JSX.Element => {
   const dispatch = useAppDispatch();
   const petsArr = useAppSelector((state) => state.pet.pets);
   const [searchQuery, setSearchQuery] = useState('');
+  console.log('wasda');
 
   useEffect(() => {
     dispatch(getPets());
-  }, []);
+  }, [dispatch]);
 
   const PetsFilteredData = (): AnimalTypes[] => {
     if (searchQuery.length === 0) {
@@ -29,14 +30,14 @@ export const HomeMiddle = (): JSX.Element => {
         : []);
     }
   };
-
   return (
     <div className="w-5/6 py-12 lg:ml-[16.666667%] flex flex-col text-center items-center mx-auto mt-12">
       <h1 className="text-4xl font-bold  text-primary py-6 capitalize">
         these animals Are Waiting For, You Pick One And Come Now.
       </h1>
       <h3 className="text-2xl font-medium py-6 capitalize">
-        Currently there is <p className="text-primary px-2">{petsArr.length}</p>
+        Currently there is{' '}
+        <span className="text-primary px-2">{petsArr.length}</span>
         available for adoption
       </h3>
       <div className="relative drop-shadow-md w-full transition-all hover:scale-sm mx-auto max-w-xl flex items-center">
